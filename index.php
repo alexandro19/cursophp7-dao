@@ -19,9 +19,12 @@ require_once("config.php");
 
 
 //Validando usuario e senha logados
-$usuario = new Usuario();
-$usuario->login("ale", "123");
-
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("ale", "123");
+//echo $usuario;
  
+$aluno = new Usuario("Alexandro","123456" );
+$aluno->insert();
+
+echo $aluno;
  ?>
